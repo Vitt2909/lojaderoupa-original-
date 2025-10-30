@@ -1,0 +1,112 @@
+.piece-page {
+    background: var(--color-ivory);
+    color: var(--color-carbon);
+    padding: 4rem 0 2rem;
+}
+
+.piece-page__back {
+    position: fixed;
+    top: 1.5rem;
+    left: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.65);
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid rgba(196, 164, 98, 0.4);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.piece-page__back:hover {
+    background: var(--color-gold);
+    color: var(--color-carbon);
+}
+
+.piece {
+    width: min(1200px, 90vw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.piece__media img {
+    border-radius: 32px;
+    box-shadow: 0 40px 60px -40px rgba(31, 28, 26, 0.35);
+}
+
+.piece__content {
+    display: grid;
+    gap: 1.5rem;
+    align-content: start;
+}
+
+.piece__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--color-gold);
+}
+
+.piece__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    font-weight: 500;
+}
+
+.piece__subtitle {
+    color: rgba(31, 28, 26, 0.7);
+    font-size: 1rem;
+}
+
+.piece__details {
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.piece__essence {
+    background: rgba(245, 241, 232, 0.9);
+    border-radius: 28px;
+    padding: 2.5rem;
+    border: 1px solid rgba(196, 164, 98, 0.3);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.piece__essence h2 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.piece__accordion {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.piece__accordion article h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.piece__accordion article p {
+    color: rgba(31, 28, 26, 0.75);
+}
+
+@media (max-width: 960px) {
+    .piece {
+        grid-template-columns: 1fr;
+        width: min(620px, 94vw);
+    }
+
+    .piece-page__back {
+        position: static;
+        display: inline-flex;
+        margin: 0 0 2rem 5%;
+    }
+}
