@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Magalhães — Poucas peças, muito legado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+    <header class="site-header" data-header>
+        <div class="site-header__inner container">
+            <a class="brand" href="index.html">Maison Magalhães</a>
+            <nav class="site-nav" aria-label="Menu principal">
+                <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+                <ul class="site-nav__list" id="menu-principal" aria-hidden="false">
+                    <li><a href="#colecoes">Início</a></li>
+                    <li><a href="#lineas-principais">Coleções</a></li>
+                    <li><a href="#a-maison">A Maison</a></li>
+                    <li><a href="#journal">Journal</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__actions">
+                <a class="header-action" href="#buscar" aria-label="Abrir busca">Busca</a>
+                <a class="header-action" href="#contato">Atendimento</a>
+                <a class="header-action" href="#sacola" aria-label="Abrir sacola">
+                    Sacola
+                    <span class="header-action__count" aria-hidden="true">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="hero" id="inicio">
+            <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1400&q=80">
+                <source src="https://cdn.coverr.co/videos/coverr-looms-of-linen-5429/1080p.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="hero__content" data-reveal>
+                <p class="hero__eyebrow">Maison Magalhães</p>
+                <h1 class="hero__title">Herança, elegância e propósito em cada tecido.</h1>
+                <p class="hero__note">Uma galeria silenciosa de peças raras. Experimente a curadoria que une Manaus, Paris e Lisboa com artesania autoral.</p>
+                <a class="btn" href="#colecoes">Entrar na coleção</a>
+            </div>
+        </section>
+
+        <section class="section section--search" id="buscar">
+            <div class="search" data-reveal>
+                <h2 class="search__title">Busque por tecidos, coleções ou códigos de autenticidade</h2>
+                <form class="search__form" role="search">
+                    <label class="search__label" for="busca-site">Buscar na Maison</label>
+                    <div class="search__field">
+                        <input id="busca-site" name="q" type="search" placeholder="Ex.: linho italiano, MM-21-0475, fragrância" autocomplete="off">
+                        <button class="btn" type="submit">Buscar</button>
+                    </div>
+                    <p class="search__hint">Resultados exibem coleções, peças essenciais e artigos do Journal relacionados.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="colecoes">
+            <header class="section__header" data-reveal>
+                <span class="section__eyebrow">Coleções</span>
+                <h2 class="section__title">Galeria de heranças</h2>
+                <p class="section__description">Cada rolagem revela uma coleção com narrativa própria — da lã merino cerimonial ao algodão perfumado de Manaus.</p>
+            </header>
+            <div class="highlight-grid">
+                <article class="collection-card" data-reveal>
+                    <div class="collection-card__media">
+                        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Casaco em lã merino sobre busto feminino" loading="lazy">
+                    </div>
+                    <div class="collection-card__content">
+                        <h3>Líneas Principais — Aurora Dourada</h3>
+                        <p>Casacos estruturados em lã merino com forro em seda esfumada. Bordados que ecoam brasões familiares.</p>
+                        <span class="collection-card__price">A partir de R$ 1.280</span>
+                    </div>
+                </article>
+                <article class="collection-card" data-reveal>
+                    <div class="collection-card__media">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Vestido de veludo iluminado por luz baixa" loading="lazy">
+                    </div>
+                    <div class="collection-card__content">
+                        <h3>Líneas Principais — Noite Imperial</h3>
+                        <p>Vestidos coluna em veludo italiano, cintos em couro e metais âmbar. Uma celebração da penumbra parisiense.</p>
+                        <span class="collection-card__price">A partir de R$ 2.150</span>
+                    </div>
+                </article>
+                <article class="collection-card" data-reveal>
+                    <div class="collection-card__media">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Camisa de linho clara sobre cabide" loading="lazy">
+                    </div>
+                    <div class="collection-card__content">
+                        <h3>Líneas Básicas — Essência de Manaus</h3>
+                        <p>Camisetas em algodão pima, caimento sereno e acabamento perfumado com essências de cacau e cumaru.</p>
+                        <span class="collection-card__price">A partir de R$ 380</span>
+                    </div>
+                </article>
+                <article class="collection-card" data-reveal>
+                    <div class="collection-card__media">
+                        <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=900&q=80" alt="Camisa azul em linho pendurada" loading="lazy">
+                    </div>
+                    <div class="collection-card__content">
+                        <h3>Líneas Básicas — Brisa Atlântica</h3>
+                        <p>Camisas em linho lavado, botões em madrepérola e gola assinada com monograma MM.</p>
+                        <span class="collection-card__price">A partir de R$ 540</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="lineas-principais">
+            <header class="section__header" data-reveal>
+                <span class="section__eyebrow">Líneas Principais (Exclusivas)</span>
+                <h2 class="section__title">Peças acima de R$ 100</h2>
+                <p class="section__description">Uma curadoria de silhuetas pensadas para salões silenciosos, navios noturnos e memórias eternas.</p>
+            </header>
+            <div class="gallery" data-reveal>
+                <div class="section__header" data-reveal>
+                    <h3 class="section__title">Editorial Aurora</h3>
+                    <p class="section__description">Fotos verticais com iluminação de editorial e o equilíbrio entre sombra e dourado.</p>
+                </div>
+                <div class="gallery__list">
+                    <article class="gallery-item" data-reveal>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Modelo usando casaco longo em lã merino" loading="lazy">
+                            <figcaption>
+                                <h3>Casaco Imperatriz</h3>
+                                <p>Lã merino | Coleção Aurora Dourada</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="gallery-item" data-reveal>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Vestido preto em veludo" loading="lazy">
+                            <figcaption>
+                                <h3>Vestido Nocturne</h3>
+                                <p>Veludo italiano | Coleção Noite Imperial</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="gallery-item" data-reveal>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80" alt="Sobretudo em cashmere" loading="lazy">
+                            <figcaption>
+                                <h3>Sobretudo Barão</h3>
+                                <p>Cashmere escocês | Coleção Legado Invernal</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="lineas-basicas">
+            <header class="section__header" data-reveal>
+                <span class="section__eyebrow">Líneas Básicas (Essenciais)</span>
+                <h2 class="section__title">T-shirts e camisas casuais</h2>
+                <p class="section__description">Funcionais e luminosas, pensadas para o cotidiano que não abre mão da herança.</p>
+            </header>
+            <div class="layout">
+                <aside class="filters" data-reveal>
+                    <h3 class="filters__title">Filtrar por</h3>
+                    <form class="filters__form" aria-label="Filtros das peças essenciais">
+                        <label class="filters__group" for="f-tecido">
+                            <span>Tecido</span>
+                            <select id="f-tecido" name="tecido">
+                                <option>Todos</option>
+                                <option>Linho italiano</option>
+                                <option>Algodão Pima</option>
+                                <option>Malha modal</option>
+                            </select>
+                        </label>
+                        <label class="filters__group" for="f-colecao">
+                            <span>Coleção</span>
+                            <select id="f-colecao" name="colecao">
+                                <option>Essência de Manaus</option>
+                                <option>Brisa Atlântica</option>
+                                <option>Manhã de Lisboa</option>
+                            </select>
+                        </label>
+                        <label class="filters__group" for="f-preco">
+                            <span>Preço</span>
+                            <select id="f-preco" name="preco">
+                                <option>A partir de R$ 220</option>
+                                <option>A partir de R$ 340</option>
+                                <option>A partir de R$ 460</option>
+                            </select>
+                        </label>
+                        <label class="filters__group" for="f-disponibilidade">
+                            <span>Disponibilidade</span>
+                            <select id="f-disponibilidade" name="disponibilidade">
+                                <option>Pronta entrega</option>
+                                <option>Pré-ordem</option>
+                                <option>Sob medida</option>
+                            </select>
+                        </label>
+                        <button type="button" class="btn">Aplicar ritual</button>
+                    </form>
+                </aside>
+                <div class="product-list">
+                    <article class="product-card" data-reveal>
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Camisa branca em linho" loading="lazy">
+                        <div class="product-card__content">
+                            <h3>Camisa Brisa Atlântica</h3>
+                            <p>Linho italiano lavado, botões em madrepérola, assinatura interna MM.</p>
+                            <span class="product-card__price">R$ 540</span>
+                        </div>
+                    </article>
+                    <article class="product-card" data-reveal>
+                        <img src="https://images.unsplash.com/photo-1462396881884-de2c07cb95ed?auto=format&fit=crop&w=900&q=80" alt="T-shirt de algodão caramelo" loading="lazy">
+                        <div class="product-card__content">
+                            <h3>T-shirt Essência de Manaus</h3>
+                            <p>Algodão pima ultrafino, perfume de cacau e cumaru aplicado manualmente.</p>
+                            <span class="product-card__price">R$ 380</span>
+                        </div>
+                    </article>
+                    <article class="product-card" data-reveal>
+                        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80" alt="Camisa azul casual" loading="lazy">
+                        <div class="product-card__content">
+                            <h3>Camisa Manhã de Lisboa</h3>
+                            <p>Algodão egípcio acetinado, gola estruturada e etiqueta perfumada.</p>
+                            <span class="product-card__price">R$ 460</span>
+                        </div>
+                    </article>
+                    <article class="product-card" data-reveal>
+                        <img src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=900&q=80" alt="Camisa bege dobrada" loading="lazy">
+                        <div class="product-card__content">
+                            <h3>Camisa Reserva do Douro</h3>
+                            <p>Algodão modal com toque de seda, tingimento em chá preto e assinatura olfativa nº 2.</p>
+                            <span class="product-card__price">R$ 420</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="essencia">
+            <div class="feature-card">
+                <div class="feature-card__media" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80" alt="Detalhe de camisa de linho Maison Magalhães" loading="lazy">
+                </div>
+                <div class="feature-card__content" data-reveal>
+                    <span class="section__eyebrow">A peça em destaque</span>
+                    <h2 class="feature-card__title">Camisa de linho 100% italiano</h2>
+                    <p class="section__description">Bordado interno de autenticidade Maison, costas respiráveis e punhos firmes com toque de âmbar na gola. Acompanha fragrância proprietária Nº3.</p>
+                    <a class="btn" href="piece.html">Descobrir a essência</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="a-maison">
+            <div class="institutional">
+                <div class="institutional__content" data-reveal>
+                    <span class="section__eyebrow">A Maison</span>
+                    <h2 class="section__title">Menos peças, mais legado</h2>
+                    <p>A Maison Magalhães nasceu da herança aristocrática do nome Magalhães, em Manaus, e ecoa hoje em Paris e Lisboa. Trabalhamos com lotes pequenos, tecidos raros e um manifesto de luxo silencioso.</p>
+                    <p>O nosso ritual prioriza tempo de atelier, autenticidade digital e um serviço de conciergerie discreto.</p>
+                    <blockquote>“O estilo passa, a herança permanece.”</blockquote>
+                </div>
+                <div class="institutional__media" data-reveal>
+                    <div class="monogram" aria-hidden="true">MM</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="loja-entrega">
+            <header class="section__header" data-reveal>
+                <span class="section__eyebrow">Loja &amp; Entrega</span>
+                <h2 class="section__title">Um ritual de chegada</h2>
+                <p class="section__description">Integração com PagSeguro Pro e Stripe, autenticidade digital garantida por QR ou código de série individual.</p>
+            </header>
+            <div class="ritual-grid">
+                <article class="ritual-card" data-reveal>
+                    <h3>Pagamento premium</h3>
+                    <p>Operamos com gateways de alta segurança e suporte concierge. Pagamentos em até 4 moedas, confirmação manual pelo ateliê.</p>
+                </article>
+                <article class="ritual-card" data-reveal>
+                    <h3>Autenticidade digital</h3>
+                    <p>Cada peça acompanha QR exclusivo ou código de série registrado em blockchain privado, validado no ato da entrega.</p>
+                </article>
+                <article class="ritual-card" data-reveal>
+                    <h3>Ritual de entrega</h3>
+                    <p>Caixa em papel algodão, carta personalizada, essência proprietária e etiqueta de gola perfumada com notas de âmbar.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="journal">
+            <header class="section__header" data-reveal>
+                <span class="section__eyebrow">Journal &amp; Lookbook</span>
+                <h2 class="section__title">Narrativas da Maison</h2>
+                <p class="section__description">Histórias sobre tecidos, bastidores e lifestyle europeu com sotaque amazônico.</p>
+            </header>
+            <div class="journal-grid">
+                <article class="journal-card" data-reveal>
+                    <span class="journal-card__category">História</span>
+                    <h3>O linho que viajou do Douro à Amazônia</h3>
+                    <p>Uma investigação sobre as rotas comerciais do século XIX que inspiraram a trama das nossas camisas.</p>
+                    <a href="#" class="journal-card__link">Ler artigo</a>
+                </article>
+                <article class="journal-card" data-reveal>
+                    <span class="journal-card__category">Estilo</span>
+                    <h3>Como vestir o espírito old money no Brasil</h3>
+                    <p>Silhuetas fluidas, alfaiataria tropical e perfumes discretos para um lifestyle de herança.</p>
+                    <a href="#" class="journal-card__link">Descobrir</a>
+                </article>
+                <article class="journal-card" data-reveal>
+                    <span class="journal-card__category">Bastidores</span>
+                    <h3>Entre Lisboa e Manaus: o ateliê que não dorme</h3>
+                    <p>O cotidiano artesanal que perfuma cada peça e garante a eternidade das costuras.</p>
+                    <a href="#" class="journal-card__link">Conhecer</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contato">
+            <div class="newsletter" data-reveal>
+                <div class="newsletter__content">
+                    <span class="section__eyebrow">Newsletter Maison</span>
+                    <h2 class="section__title">Receba convites privados</h2>
+                    <p class="section__description">Assine para receber convites para pré-vendas, rituais de entrega personalizados e acesso ao Journal completo.</p>
+                </div>
+                <form class="newsletter__form">
+                    <label for="newsletter-nome">Nome</label>
+                    <input type="text" id="newsletter-nome" name="nome" autocomplete="name" placeholder="Seu nome" required>
+                    <label for="newsletter-email">E-mail</label>
+                    <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="nome@maisonmagalhaes.com" required>
+                    <button class="btn" type="submit">
+                        Solicitar convite
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">Maison Magalhães</div>
+            <nav class="footer__links" aria-label="Rodapé">
+                <a href="#">Termos</a>
+                <a href="#">Política</a>
+                <a href="#contato">Contato</a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="mailto:concierge@maisonmagalhaes.com">E-mail</a>
+            </nav>
+            <p class="footer__note">Maison Magalhães — Manaus • Paris • Lisboa</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
